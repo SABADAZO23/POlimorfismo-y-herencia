@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# Superclase abstracta Animal
+
 class Animal(ABC):
     def __init__(self, nombre, edad, habitat):
         self._nombre = nombre
@@ -25,7 +25,7 @@ class Animal(ABC):
     def get_info(self):
         return f"{self._nombre} - Edad: {self._edad} años - Hábitat: {self._habitat}"
 
-    # Getters y Setters
+  
     @property
     def nombre(self):
         return self._nombre
@@ -41,4 +41,5 @@ class Animal(ABC):
     @edad.setter
     def edad(self, nueva_edad):
         self._edad = nueva_edad
+
 
