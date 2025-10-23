@@ -12,7 +12,7 @@ class Mamifero(Animal):
     def get_info(self):
         return f"{super().get_info()} - Pelaje: {self._pelaje} - Gestación: {self._gestacion_meses} meses"
 
-# Subclase Ave
+
 class Ave(Animal):
     def __init__(self, nombre, edad, habitat, envergadura_alas, puede_volar):
         super().__init__(nombre, edad, habitat)
@@ -26,7 +26,7 @@ class Ave(Animal):
         vuelo = "Sí" if self._puede_volar else "No"
         return f"{super().get_info()} - Envergadura: {self._envergadura_alas}cm - Vuela: {vuelo}"
 
-# Subclase Reptil
+
 class Reptil(Animal):
     def __init__(self, nombre, edad, habitat, escamas, sangre_fria):
         super().__init__(nombre, edad, habitat)
@@ -39,3 +39,4 @@ class Reptil(Animal):
     def get_info(self):
         temp = "Sangre fría" if self._sangre_fria else "Sangre caliente"
         return f"{super().get_info()} - Escamas: {self._escamas} - {temp}"
+
